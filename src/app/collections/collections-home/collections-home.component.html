@@ -7,23 +7,19 @@
 
 <app-divider>Tab Menu </app-divider>
 <div class="ui grid">
-  <div class="four wide column">
-    <div class="ui vertical fluid tabular menu">
-      <a
-        class="item"
-        [routerLink]="['./']"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Bio</a
-      >
-      <a class="item" routerLink="companies" routerLinkActive="active"
-        >Companies</a
-      >
-      <a class="item" routerLink="partners" routerLinkActive="active"
-        >Partners</a
-      >
-    </div>
-  </div>
+  <app-tabs>
+    <a
+      class="item"
+      [routerLink]="['./']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Bio</a
+    >
+    <a class="item" routerLink="companies" routerLinkActive="active"
+      >Companies</a
+    >
+    <a class="item" routerLink="partners" routerLinkActive="active">Partners</a>
+  </app-tabs>
   <div class="four wide column stretched">
     <div class="ui segment">
       <router-outlet></router-outlet>
