@@ -1,0 +1,14 @@
+<app-divider> Items Component </app-divider>
+<div class="ui items">
+  <div class="item" *ngFor="let item of data">
+    <div class="image">
+      <img [src]="item.image" />
+    </div>
+    <div class="content">
+      <a class="header">{{ item.label | uppercase }}</a>
+      <div class="description">
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
