@@ -21,6 +21,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./views/views.module').then((m) => m.ViewsModule),
   },
+  {
+    path: 'todos',
+    loadChildren: () =>
+      import('./todos/todos.module').then((m) => m.TodosModule),
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
 ];
