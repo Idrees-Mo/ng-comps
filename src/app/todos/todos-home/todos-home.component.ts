@@ -7,9 +7,11 @@ import { TodosService } from '../todos.service';
   styleUrls: ['./todos-home.component.css'],
 })
 export class TodosHomeComponent implements OnInit {
+  todos: any = [];
   constructor(private todosService: TodosService) {}
 
   ngOnInit(): void {
+    this.todos = this.todosService.getTodos();
     console.log(this.todosService.getTodos());
   }
 }
