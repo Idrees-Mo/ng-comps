@@ -5,9 +5,10 @@ import { TodosItemComponent } from './todos-item/todos-item.component';
 import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 import { SharedModule } from '../shared/shared.module';
 import { TodosRoutingModule } from './todos-routing.module';
+import { TodoFormComponent } from './todo-form/todo-form.component';
 
 @NgModule({
-  declarations: [TodosHomeComponent, TodosItemComponent, TodoDetailComponent],
+  declarations: [TodosHomeComponent, TodosItemComponent, TodoDetailComponent, TodoFormComponent],
   imports: [CommonModule, TodosRoutingModule, SharedModule],
 })
 export class TodosModule {}
