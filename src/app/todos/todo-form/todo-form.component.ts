@@ -6,6 +6,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { TodosService } from '../todos.service';
 
 @Component({
   selector: 'app-todo-form',
@@ -17,14 +18,16 @@ export class TodoFormComponent {
     title: ['', Validators.required],
   });
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private todoService: TodosService
+  ) {
     // this.form = new FormGroup({
     //   title: new FormControl(['', Validators.required]),
     // });
   }
 
   onSubmit(): void {
-    console.log('hello');
-    console.warn(this.form.getRawValue());
+    this.todoService.addTodo(this.form.getRawValue().title);
   }
 }
