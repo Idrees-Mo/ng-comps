@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { Form, FormBuilder, Validators } from '@angular/forms';
+import {
+  Form,
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-todo-form',
@@ -11,9 +17,14 @@ export class TodoFormComponent {
     title: ['', Validators.required],
   });
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) {
+    // this.form = new FormGroup({
+    //   title: new FormControl(['', Validators.required]),
+    // });
+  }
 
   onSubmit(): void {
+    console.log('hello');
     console.warn(this.form.getRawValue());
   }
 }
