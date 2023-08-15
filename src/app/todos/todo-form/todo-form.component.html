@@ -1,8 +1,10 @@
-<form class="ui form segment">
+<!-- TODO --- form binding  -->
+
+<form class="ui form segment" (ngSubmit)="onSubmit()">
   <div class="field">
     <label>New Todo</label>
-    <input type="text" name="special-name" />
+    <input type="text" name="special-name" formControlName="title" />
   </div>
-  <div class="ui primary submit button">Add</div>
+  <div class="ui primary submit button" type="submit">Add Todo</div>
   <div class="ui error message"></div>
 </form>
