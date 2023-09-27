@@ -26,6 +26,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./todos/todos.module').then((m) => m.TodosModule),
   },
+  {
+    path: 'mods',
+    loadChildren: () => import('./mods/mods.module').then((m) => m.ModsModule),
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
 ];

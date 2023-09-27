@@ -6,7 +6,7 @@ import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 import { SharedModule } from '../shared/shared.module';
 import { TodosRoutingModule } from './todos-routing.module';
 import { TodoFormComponent } from './todo-form/todo-form.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
