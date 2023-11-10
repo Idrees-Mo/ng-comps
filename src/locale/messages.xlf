@@ -16,6 +16,34 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8754151439222282996" datatype="html">
+        <source>car</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/views-home/views-home.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="510778126761286179" datatype="html">
+        <source>A beautiful gray car, would love to have it</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/views-home/views-home.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6380854492032061843" datatype="html">
+        <source>bike</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/views-home/views-home.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3133737511444825640" datatype="html">
+        <source>A beautiful gray bike, would love to ride it</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/views-home/views-home.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

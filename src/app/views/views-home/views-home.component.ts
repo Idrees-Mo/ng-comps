@@ -14,14 +14,14 @@ export class ViewsHomeComponent {
 
   items = [
     {
-      label: 'car',
+      label: $localize`car`,
       image: '/assets/images/car.jpeg',
-      description: 'A beautiful gray car, would love to have it',
+      description: $localize`A beautiful gray car, would love to have it`,
     },
     {
-      label: 'bike',
+      label: $localize`bike`,
       image: '/assets/images/bike.jpeg',
-      description: 'A beautiful gray bike, would love to ride it',
+      description: $localize`A beautiful gray bike, would love to ride it`,
     },
   ];
 }
